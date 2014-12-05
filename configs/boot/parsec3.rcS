@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#wait for system to calm down
+sleep 10
+
+#take a chekpoint in 100000 ns
+#m5 checkpoint 100000
+
+#go to parsec dir
+cd /root/parsec-3.0/
+
+#change the source env variable
+source env.sh
+
+#reset the stats
+m5 resetstats
+
+#run streamcluster
+parsecmgmt -a run -p blackscholes -i simsmall
+
+#exit the simulation
+
+echo "shell funciona para blackscholes y time"
+
+m5 exit

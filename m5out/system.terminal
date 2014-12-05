@@ -1,0 +1,204 @@
+Booting Linux on physical CPU 0
+Initializing cgroup subsys cpuset
+Linux version 3.3.0-rc3gem5+ (gem5@zizzer) (gcc version 4.5.2 (Ubuntu/Linaro 4.5.2-8ubuntu3) ) #25 SMP Wed Jun 27 21:06:31 EDT 2012
+CPU: ARMv7 Processor [410fc0f0] revision 0 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+Machine: ARM-Versatile Express
+SoC: ARM VE Platform
+bootconsole [earlycon0] enabled
+Memory policy: ECC disabled, Data cache writealloc
+On node 0 totalpages: 65536
+free_area_init_node: node 0, pgdat 8061ce40, node_mem_map 80642000
+  Normal zone: 512 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 65024 pages, LIFO batch:15
+PERCPU: Embedded 7 pages/cpu @80845000 s5440 r8192 d15040 u32768
+pcpu-alloc: s5440 r8192 d15040 u32768 alloc=8*4096
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+Kernel command line: earlyprintk=pl011,0x1c090000 console=ttyAMA0 lpj=19988480 norandmaps rw loglevel=8 mem=256MB root=/dev/sda1
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 256MB = 256MB total
+Memory: 253436k/253436k available, 8708k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0x90800000 - 0xff000000   (1768 MB)
+    lowmem  : 0x80000000 - 0x90000000   ( 256 MB)
+    pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+    modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+      .text : 0x80008000 - 0x805c3b40   (5871 kB)
+      .init : 0x805c4000 - 0x805f2540   ( 186 kB)
+      .data : 0x805f4000 - 0x8061e8a0   ( 171 kB)
+       .bss : 0x8061e8c4 - 0x80641f68   ( 142 kB)
+SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Hierarchical RCU implementation.
+NR_IRQS:128
+ct_ca15x4_arch_timer_timer_register failed -6
+sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+Console: colour dummy device 80x30
+Calibrating delay loop (skipped) preset value.. 3997.69 BogoMIPS (lpj=19988480)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+hw perfevents: enabled with ARMv7 Cortex-A15 PMU driver, 1 counters available
+Setting up static identity map for 0x80478b58 - 0x80478bb0
+Brought up 1 CPUs
+SMP: Total of 1 processors activated (3997.69 BogoMIPS).
+NET: Registered protocol family 16
+hw-breakpoint: Debug register access (0xee113e93) caused undefined instruction on CPU 0
+hw-breakpoint: Debug register access (0xee013e90) caused undefined instruction on CPU 0
+hw-breakpoint: Debug register access (0xee003e17) caused undefined instruction on CPU 0
+hw-breakpoint: Debug register access (0xee004e52) caused undefined instruction on CPU 0
+Serial: AMBA PL011 UART driver
+mb:uart0: ttyAMA0 at MMIO 0x1c090000 (irq = 37) is a PL011 rev3
+console [ttyAMA0] enabled, bootconsole disabled
+console [ttyAMA0] enabled, bootconsole disabled
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [io  0x0000-0xffffffff]
+pci_bus 0000:00: root bus resource [mem 0x00000000-0xffffffff]
+pci 0000:00:00.0: [8086:1075] type 0 class 0x000200
+pci 0000:00:00.0: reg 10: [mem 0x00000000-0x0001ffff]
+pci 0000:00:00.0: reg 30: [mem 0x00000000-0x000007ff pref]
+pci 0000:00:01.0: [8086:7111] type 0 class 0x000101
+pci 0000:00:01.0: reg 10: [io  0x0000-0x0007]
+pci 0000:00:01.0: reg 14: [io  0x0000-0x0003]
+pci 0000:00:01.0: reg 18: [io  0x0000-0x0007]
+pci 0000:00:01.0: reg 1c: [io  0x0000-0x0003]
+pci 0000:00:01.0: reg 20: [io  0x0000-0x000f]
+pci 0000:00:01.0: reg 30: [mem 0x00000000-0x000007ff pref]
+PCI: bus0: Fast back to back transfers disabled
+PCI: max bus depth: 0 pci_try_num: 1
+pci 0000:00:00.0: BAR 0: assigned [mem 0x40000000-0x4001ffff]
+pci 0000:00:00.0: BAR 6: assigned [mem 0x40020000-0x400207ff pref]
+pci 0000:00:01.0: BAR 6: assigned [mem 0x40020800-0x40020fff pref]
+pci 0000:00:01.0: BAR 4: assigned [io  0x2f000000-0x2f00000f]
+pci 0000:00:01.0: BAR 0: assigned [io  0x2f000010-0x2f000017]
+pci 0000:00:01.0: BAR 2: assigned [io  0x2f000018-0x2f00001f]
+pci 0000:00:01.0: BAR 1: assigned [io  0x2f000020-0x2f000023]
+pci 0000:00:01.0: BAR 3: assigned [io  0x2f000024-0x2f000027]
+pci_bus 0000:00: resource 4 [io  0x0000-0xffffffff]
+pci_bus 0000:00: resource 5 [mem 0x00000000-0xffffffff]
+PCI map irq: slot 0, pin 1, devslot 0, irq: 68
+PCI map irq: slot 0, pin 2, devslot 1, irq: 69
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+libata version 3.00 loaded.
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Advanced Linux Sound Architecture Driver Version 1.0.24.
+Switching to clocksource v2m-timer1
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+UDP hash table entries: 128 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 128 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 64 bytes, default 64
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+Btrfs loaded
+msgmni has been set to 494
+io scheduler noop registered (default)
+clcd-pl11x mb:clcd: PL111 rev1 at 0x1c1f0000
+clcd-pl11x mb:clcd: V2M hardware, VGA display
+v2m_cfg_write: writing 018023d8 to 00100001
+v2m_cfg_write: writing 00000000 to 00700000
+Console: switching to colour frame buffer device 80x30
+brd: module loaded
+loop: module loaded
+ata_piix 0000:00:01.0: version 2.13
+PCI: enabling device 0000:00:01.0 (0040 -> 0041)
+scsi0 : ata_piix
+scsi1 : ata_piix
+ata1: PATA max UDMA/33 cmd 0x2f000010 ctl 0x2f000020 bmdma 0x2f000000 irq 69
+ata2: PATA max UDMA/33 cmd 0x2f000018 ctl 0x2f000024 bmdma 0x2f000008 irq 69
+scsi2 : pata_platform
+ata3: PATA max PIO0 no IRQ, using PIO polling mmio cmd 0x1c1a0000 ctl 0x1c1a0100
+e100: Intel(R) PRO/100 Network Driver, 3.5.24-k2-NAPI
+e100: Copyright(c) 1999-2006 Intel Corporation
+e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+e1000: Copyright (c) 1999-2006 Intel Corporation.
+PCI: enabling device 0000:00:00.0 (0040 -> 0042)
+ata1.00: ATA-7: M5 IDE Disk, , max UDMA/66
+ata1.00: 16514064 sectors, multi 0: LBA 
+ata1.00: configured for UDMA/33
+scsi 0:0:0:0: Direct-Access     ATA      M5 IDE Disk      n/a  PQ: 0 ANSI: 5
+sd 0:0:0:0: [sda] 16514064 512-byte logical blocks: (8.45 GB/7.87 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+sd 0:0:0:0: [sda] Attached SCSI disk
+e1000 0000:00:00.0: eth0: (PCI:33MHz:32-bit) 00:90:00:00:00:01
+e1000 0000:00:00.0: eth0: Intel(R) PRO/1000 Network Connection
+e1000e: Intel(R) PRO/1000 Network Driver - 1.5.1-k
+e1000e: Copyright(c) 1999 - 2011 Intel Corporation.
+igb: Intel(R) Gigabit Ethernet Network Driver - version 3.2.10-k
+igb: Copyright (c) 2007-2012 Intel Corporation.
+igbvf: Intel(R) Gigabit Virtual Function Network Driver - version 2.0.1-k
+igbvf: Copyright (c) 2009 - 2011 Intel Corporation.
+ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver - version 3.6.7-k
+ixgbe: Copyright (c) 1999-2011 Intel Corporation.
+ixgb: Intel(R) PRO/10GbE Network Driver - version 1.0.135-k2-NAPI
+ixgb: Copyright (c) 1999-2008 Intel Corporation.
+isp1760 isp1760: NXP ISP1760 USB Host Controller
+isp1760 isp1760: new USB bus registered, assigned bus number 1
+isp1760 isp1760: Scratch test failed.
+isp1760 isp1760: can't setup
+isp1760 isp1760: USB bus 1 deregistered
+isp1760: Failed to register the HCD device
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mousedev: PS/2 mouse device common for all mice
+rtc-pl031 mb:rtc: rtc core: registered pl031 as rtc0
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+ALSA device list:
+  No soundcards found.
+oprofile: using timer interrupt.
+TCP cubic registered
+NET: Registered protocol family 17
+VFP support v0.3: implementor 41 architecture 4 part 30 variant a rev 0
+rtc-pl031 mb:rtc: setting system clock to 2009-01-01 00:00:00 UTC (1230768000)
+ input: AT Raw Set 2 keyboard as /devices/mb:kmi0/serio0/input/input0
+input: touchkitPS/2 eGalax Touchscreen as /devices/mb:kmi1/serio1/input/input1
+VFS: Mounted root (ext2 filesystem) on device 8:1.
+Freeing init memory: 184K
+ [PARSEC] Benchmarks to run:  parsec.blackscholes
+
+[PARSEC] [========== Running benchmark parsec.blackscholes [1] ==========]
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+in_4K.txt
+tar: in_4K.txt: time stamp 2009-07-27 16:27:48 is 17962047.568058 s in the future
+[PARSEC] Running 'time /root/parsec-3.0/pkgs/apps/blackscholes/inst/arm-linux.gcc/bin/blackscholes 1 in_4K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 3.0-beta-20120904
+Num of Options: 4096
+Num of Runs: 100
+Size of data: 163840
+
+real	0m1.407s
+user	0m1.400s
+sys	0m0.000s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Bienia. Benchmarking Modern Multiprocessors. Ph.D. Thesis, 2011.
+[PARSEC]
+[PARSEC] Done.
+shell funciona para blackscholes y time
